@@ -7,43 +7,48 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
     body{
-        background-color: #fff
+        background-color: #fff;
+        font-family: 'DM Sans', sans-serif;
     }
     button {
         font-weight: bold;
         font-size: 1.1rem;
+        letter-spacing: 0.02rem;
         cursor: pointer;
-        padding: 1rem 2rem;
-        border: 3px solid #000;
-        background:transparent;
-        color: #000;
+        padding: 1rem 3rem;
+        border: 3px solid #5DA399;
+        border-radius: 1rem; 
+        background: transparent;
+        color: #5DA399;
         transition: all 0.5s ease;
+        font-family: 'DM Sans', sans-serif;
         &:hover{
-            background-color: #000;
-            color: white;
+            background-color: #5DA399;
+            color: #FDFDFD;
         }
     }
     h2 {
-            font-weight: lighter;
+            font-weight: 400;
             font-size: 4rem;
+            color: #12141d;
         }
         h3{
-            color: #000;
+            color: #12141d;
         }
         h4 {
             font-weight: bold;
         }
         span {
             font-weight: bold;
-            color: #23d997;
+            color: #5DA399;
         }
         a{
             font-size: 1.1rem;
         }
         p {
             padding: 3rem 0rem;
-            color: #ccc;
-            font-size: 1.4rem;
+            color: #12141d;
+            font-size: 3rem;
             line-height: 150%;
         }
 `;
