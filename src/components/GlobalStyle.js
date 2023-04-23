@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
     body{
         background-color: #fff;
         font-family: 'DM Sans', sans-serif;
+        /* background-image: url("background.png"); */
     }
     button {
         font-weight: bold;

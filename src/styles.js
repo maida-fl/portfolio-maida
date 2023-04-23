@@ -7,7 +7,11 @@ export const About = styled.div`
   justify-content: space-between;
   padding: 5rem 10rem;
   color: #000;
-  background-image: url("background.png");
+  /* .title {
+    width: 70%;
+    margin: auto;
+  } */
+  /* background-image: url("background.png"); */
 `;
 export const Description = styled.div`
   flex: 1;
@@ -17,7 +21,7 @@ export const Description = styled.div`
   }
 `;
 export const Image = styled.div`
-  flex: 1;
+  /* flex: 1; */
   overflow: hidden;
   img {
     width: 100%;
