@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
         letter-spacing: 0.02rem;
         cursor: pointer;
         padding: 1rem 3rem;
+        margin-top: 1rem;
         border: 3px solid #5DA399;
         border-radius: 1rem; 
         background: transparent;
@@ -46,7 +47,7 @@ const GlobalStyle = createGlobalStyle`
             font-size: 1.1rem;
         }
         p {
-            padding: 3rem 0rem;
+            padding: 1rem 0rem;
             color: #12141d;
             font-size: 3rem;
             line-height: 150%;
