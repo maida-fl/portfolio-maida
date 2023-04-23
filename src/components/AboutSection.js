@@ -1,26 +1,59 @@
 import React from "react";
+//Styled
+import styled from "styled-components";
+import home1 from "../img/home1.png";
 
 const AboutSection = () => {
   return (
-    <div>
-      <div className="description">
+    <About>
+      <Description>
         <div className="title">
-          <div className="hide">
+          <Hide>
             <h2>Maida Guzman</h2>
-          </div>
-          <div className="hide">
+          </Hide>
+          <Hide>
             <p>
               web <span>developer</span>
             </p>
-          </div>
+          </Hide>
           <button>Contact</button>
         </div>
-        <div className="image">
-          <img src="" alt="" />
-        </div>
-      </div>
-    </div>
+      </Description>
+      <Image>
+        <img src={home1} alt="cvimage" />
+      </Image>
+    </About>
   );
 };
+
+//Styled component
+const About = styled.div`
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+  color: #000;
+`;
+const Description = styled.div`
+  flex: 1;
+  padding-right: 5rem;
+  h2 {
+    font-weight: lighter;
+  }
+`;
+const Image = styled.div`
+  flex: 1;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: scale-down;
+  }
+`;
+
+const Hide = styled.div`
+  overflow: hidden;
+`;
 
 export default AboutSection;
