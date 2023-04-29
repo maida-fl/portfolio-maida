@@ -3,6 +3,7 @@ import home1 from "../img/home1.png";
 import { About, Description, Image, Hide } from "../styles";
 //Framer Motion
 import { motion } from "framer-motion";
+import { titleAnim, fade } from "../animation";
 
 const AboutSection = () => {
   return (
@@ -10,15 +11,15 @@ const AboutSection = () => {
       <Description>
         <motion.div>
           <Hide>
-            <motion.h2>Maida Guzman</motion.h2>
+            <motion.h2 variants={titleAnim}>Maida Guzman</motion.h2>
           </Hide>
           <Hide>
-            <motion.p>
+            <motion.p variants={titleAnim}>
               web <span>developer</span>
             </motion.p>
           </Hide>
         </motion.div>
-        <button>Contact</button>
+        <motion.button variants={fade}>Contact</motion.button>
       </Description>
       {/* <Image>
         <img src={home1} alt="cvimage" />
