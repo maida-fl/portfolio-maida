@@ -1,24 +1,24 @@
 import React from "react";
 import home1 from "../img/home1.png";
-//Styled
-import styled from "styled-components";
 import { About, Description, Image, Hide } from "../styles";
+//Framer Motion
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
     <About>
       <Description>
-        <div className="title">
+        <motion.div>
           <Hide>
-            <h2>Maida Guzman</h2>
+            <motion.h2>Maida Guzman</motion.h2>
           </Hide>
           <Hide>
-            <p>
+            <motion.p>
               web <span>developer</span>
-            </p>
+            </motion.p>
           </Hide>
-          <button>Contact</button>
-        </div>
+        </motion.div>
+        <button>Contact</button>
       </Description>
       {/* <Image>
         <img src={home1} alt="cvimage" />
