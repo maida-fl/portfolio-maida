@@ -46,6 +46,7 @@ const GlobalStyle = createGlobalStyle`
     }
         h3{
             color: #12141d;
+            padding: 1.5rem;
         }
         h4 {
             font-weight: bold;
@@ -56,6 +57,8 @@ const GlobalStyle = createGlobalStyle`
         }
         a{
             font-size: 1.1rem;
+            text-decoration: none;
+            color: #12141d;
         }
         .subtitle {
             padding: 1rem 0rem;
