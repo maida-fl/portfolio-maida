@@ -29,11 +29,21 @@ const GlobalStyle = createGlobalStyle`
             color: #FDFDFD;
         }
     }
-    h2 {
+    h1 {
             font-weight: 400;
             font-size: 4rem;
             color: #12141d;
         }
+    h2 {
+            font-weight: 400;
+            font-size: 2.5rem;
+            color: #12141d;
+        }
+    p  {
+        font-size: 1.2rem;
+        line-height: 200%;
+        color: #12141d;
+    }
         h3{
             color: #12141d;
         }
@@ -47,7 +57,7 @@ const GlobalStyle = createGlobalStyle`
         a{
             font-size: 1.1rem;
         }
-        p {
+        .subtitle {
             padding: 1rem 0rem;
             color: #12141d;
             font-size: 3rem;

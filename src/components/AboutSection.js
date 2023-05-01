@@ -4,7 +4,7 @@ import { About, Description, Image, Hide } from "../styles";
 //Framer Motion
 import { motion } from "framer-motion";
 import { titleAnim, fade } from "../animation";
-import Wave from "./Wave";
+// import Wave from "./Wave";
 
 const AboutSection = () => {
   return (
@@ -12,12 +12,12 @@ const AboutSection = () => {
       <Description>
         <motion.div>
           <Hide>
-            <motion.h2 variants={titleAnim}>Maida Guzman</motion.h2>
+            <motion.h1 variants={titleAnim}>Maida Guzman</motion.h1>
           </Hide>
           <Hide>
-            <motion.p variants={titleAnim}>
+            <motion.h1 className="subtitle" variants={titleAnim}>
               web <span>developer</span>
-            </motion.p>
+            </motion.h1>
           </Hide>
         </motion.div>
         <motion.button variants={fade}>Contact</motion.button>
@@ -25,7 +25,7 @@ const AboutSection = () => {
       {/* <Image>
         <img src={home1} alt="cvimage" />
       </Image> */}
-      <Wave/>
+      {/* <Wave/> */}
     </About>
   );
 };

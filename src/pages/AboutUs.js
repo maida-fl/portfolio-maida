@@ -3,6 +3,7 @@ import AboutSection from "../components/AboutSection";
 //Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+import ProjectsSection from "../components/ProjectsSection";
 
 const AboutUs = () => {
   return (
@@ -13,6 +14,7 @@ const AboutUs = () => {
       exit="exit"
     >
       <AboutSection />
+      <ProjectsSection />
     </motion.div>
   );
 };
