@@ -17,6 +17,8 @@ const StyledProject = styled(motion.div)`
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
   text-align: center;
   border-radius: 1rem;
+  cursor: pointer;
+  overflow: hidden;
   h3 {
     padding: 1.5rem 0rem;
   }

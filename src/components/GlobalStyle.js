@@ -42,10 +42,10 @@ const GlobalStyle = createGlobalStyle`
     p  {
         font-size: 1.2rem;
         line-height: 200%;
-        color: #12141d;
+        color: #696969;
     }
         h3{
-            color: #12141d;
+            color: #333;
             padding: 1.5rem;
         }
         h4 {
@@ -65,6 +65,9 @@ const GlobalStyle = createGlobalStyle`
             color: #12141d;
             font-size: 3rem;
             line-height: 150%;
+        }
+        img{
+            display: block;
         }
 `;
 
