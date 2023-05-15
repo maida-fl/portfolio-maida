@@ -3,16 +3,39 @@ import Project from "./Project";
 //Styling and Animation
 import styled from "styled-components";
 import { motion } from "framer-motion";
+//Images
+import quotes from "../img/quotes-ipad-mockup.png";
+import capture from "../img/capture.png";
+import mood from "../img/mood.png";
+import ignite from "../img/ignite.png";
+import numa from "../img/numa.png";
 
 const ProjectsSection = () => {
   return (
     <ProjectList>
       <h2>Projects</h2>
       <Projects>
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        <Project name="mood." description="Music Web App" image={mood} />
+        <Project
+          name="NUMA"
+          description="e-commerce landing page"
+          image={numa}
+        />
+        <Project
+          name="QUOTES"
+          description="Random quote generator working with public API and integrated with Twitter"
+          image={quotes}
+        />
+        <Project
+          name="Ignite"
+          description="Gaming App working with public API"
+          image={ignite}
+        />
+        <Project
+          name="Capture"
+          description="Web portfolio for Photography and Video"
+          image={capture}
+        />
       </Projects>
     </ProjectList>
   );
