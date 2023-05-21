@@ -12,7 +12,7 @@ import numa from "../img/numa.png";
 
 const ProjectsSection = () => {
   return (
-    <ProjectList>
+    <ProjectList id="work">
       <h2>Projects</h2>
       <Projects>
         <Project name="mood." description="Music Web App" image={mood} />

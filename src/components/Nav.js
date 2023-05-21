@@ -1,20 +1,33 @@
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 const Nav = () => {
   return (
     <StyledNav>
       <h1>
-        <a href="#">Logo</a>
+        {/* <a href="#">Logo</a> */}
+        <Link to="home" smooth={true} duration={500}>
+          Logo
+        </Link>
       </h1>
       <ul>
         <li>
-          <a href="#">about me</a>
+          {/* <a href="#">about me</a> */}
+          <Link to="skills" smooth={true} duration={500}>
+            about me
+          </Link>
         </li>
         <li>
-          <a href="#">work</a>
+          {/* <a href="#">work</a> */}
+          <Link to="work" smooth={true} duration={500}>
+            work
+          </Link>
         </li>
         <li>
-          <a href="#">contact</a>
+          {/* <a href="#">contact</a> */}
+          <Link to="contact" smooth={true} duration={500}>
+            contact
+          </Link>
         </li>
       </ul>
     </StyledNav>
