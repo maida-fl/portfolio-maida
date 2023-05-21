@@ -8,7 +8,7 @@ const Nav = () => {
       {/* <a href="#">Logo</a> */}
       <Link to="home" smooth={true} duration={500} className="maida-logo">
         {/* <img src={logo} alt="logo" /> */}
-        mg
+        MG
       </Link>
       <ul>
         <li>

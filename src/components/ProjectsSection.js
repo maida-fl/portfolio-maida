@@ -3,6 +3,8 @@ import Project from "./Project";
 //Styling and Animation
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { useScroll } from "./useScroll";
+import { fade } from "../animation";
 //Images
 import quotes from "../img/quotes-ipad-mockup.png";
 import capture from "../img/capture.png";
@@ -11,8 +13,15 @@ import ignite from "../img/ignite.png";
 import numa from "../img/numa.png";
 
 const ProjectsSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <ProjectList id="work">
+    <ProjectList
+      variants={fade}
+      animate={controls}
+      initial="hidden"
+      ref={element}
+      id="work"
+    >
       <h2>Projects</h2>
       <Projects>
         <Project name="mood." description="Music Web App" image={mood} />
