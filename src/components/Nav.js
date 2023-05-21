@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
+// import logo from "../img/Logo1.png";
 
 const Nav = () => {
   return (
     <StyledNav>
-      <h1>
-        {/* <a href="#">Logo</a> */}
-        <Link to="home" smooth={true} duration={500}>
-          Logo
-        </Link>
-      </h1>
+      {/* <a href="#">Logo</a> */}
+      <Link to="home" smooth={true} duration={500} className="maida-logo">
+        {/* <img src={logo} alt="logo" /> */}
+        mg
+      </Link>
       <ul>
         <li>
           {/* <a href="#">about me</a> */}
@@ -25,7 +25,12 @@ const Nav = () => {
         </li>
         <li>
           {/* <a href="#">contact</a> */}
-          <Link to="contact" smooth={true} duration={500}>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="button-style"
+          >
             contact
           </Link>
         </li>
@@ -52,6 +57,24 @@ const StyledNav = styled.nav`
   li {
     padding-left: 10rem;
     position: relative;
+  }
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255, 255, 255, 0.85);
+  img {
+    width: 150px;
+  }
+  /* .button-style {
+    padding: 1rem 3rem;
+    border: 3px solid #5da399;
+    border-radius: 1rem;
+    background: transparent;
+  } */
+  li,
+  .maida-logo {
+    cursor: pointer;
   }
 `;
 export default Nav;
