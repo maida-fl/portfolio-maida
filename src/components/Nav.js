@@ -13,24 +13,19 @@ const Nav = () => {
       <ul>
         <li>
           {/* <a href="#">about me</a> */}
-          <Link to="skills" smooth={true} duration={500}>
+          <Link to="skills" smooth={true} duration={500} className="nav-link">
             about me
           </Link>
         </li>
         <li>
           {/* <a href="#">work</a> */}
-          <Link to="work" smooth={true} duration={500}>
+          <Link to="work" smooth={true} duration={500} className="nav-link">
             work
           </Link>
         </li>
         <li>
           {/* <a href="#">contact</a> */}
-          <Link
-            to="contact"
-            smooth={true}
-            duration={500}
-            className="button-style"
-          >
+          <Link to="contact" smooth={true} duration={500} className="nav-link">
             contact
           </Link>
         </li>
@@ -75,6 +70,27 @@ const StyledNav = styled.nav`
   li,
   .maida-logo {
     cursor: pointer;
+  }
+  .nav-link {
+    text-decoration: none;
+    /* font-weight: 700; */
+    position: relative;
+  }
+  .nav-link::before {
+    content: "";
+    background-color: rgba(93, 163, 153, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 8px;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::before {
+    bottom: 0;
+    height: 100%;
   }
 `;
 export default Nav;

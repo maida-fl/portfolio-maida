@@ -8,6 +8,7 @@ const Project = (props) => {
       <h3>{props.name}</h3>
       <p>{props.description}</p>
       <img src={props.image} alt="styled" />
+      <div className="blur"></div>
     </StyledProject>
   );
 };
@@ -26,6 +27,19 @@ const StyledProject = styled(motion.div)`
     width: 100%;
     height: 40vh;
     object-fit: cover;
+  }
+  .blur {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+    }
   }
 `;
 
