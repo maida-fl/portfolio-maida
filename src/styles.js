@@ -15,11 +15,12 @@ export const About = styled.div`
 `;
 export const Description = styled.div`
   flex: 1;
-  padding-right: 5rem;
+  /* padding-right: 5rem; */
   z-index: 2;
   h1 {
     font-weight: lighter;
   }
+  text-align: center;
 `;
 export const Image = styled.div`
   /* flex: 1; */
