@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { fade } from "../animation";
 //Images
-import quotes from "../img/quotes-ipad-mockup.png";
+import quotes from "../img/quotes.png";
 import capture from "../img/capture.png";
-import mood from "../img/mood.png";
+import mood from "../img/mood2.png";
 import ignite from "../img/ignite.png";
 import numa from "../img/numa.png";
 
