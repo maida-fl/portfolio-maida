@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
-// import logo from "../img/Logo1.png";
+// import logo from "../img/logo3.png";
 
 const Nav = () => {
   return (
@@ -70,6 +70,9 @@ const StyledNav = styled.nav`
   li,
   .maida-logo {
     cursor: pointer;
+  }
+  .maida-logo img {
+    width: 50px;
   }
   .nav-link {
     text-decoration: none;
