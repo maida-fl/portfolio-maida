@@ -20,6 +20,7 @@ const StyledProject = styled(motion.div)`
   border-radius: 1rem;
   cursor: pointer;
   overflow: hidden;
+  position: relative;
   h3 {
     padding: 1.5rem 0rem;
   }
@@ -35,11 +36,11 @@ const StyledProject = styled(motion.div)`
     top: 0;
     right: 0;
     position: absolute;
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
     &:hover {
-      background: rgba(255, 255, 255, 0.2);
-      backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(5px);
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
     }
   }
 `;
