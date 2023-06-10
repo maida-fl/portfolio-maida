@@ -12,23 +12,25 @@ import iconrdx from "../img/technologies-icons/redux-icon.svg";
 const Project = (props) => {
   return (
     <StyledProject>
-      <div className="image">
-        <img src={props.image} alt="styled" />
-        <div className="blur"></div>
-        <div className="content">
-          <h3>{props.name}</h3>
-          <p>{props.description}</p>
-          <div className="technologies">
-            <img src={iconstc} alt="styledcomponents" />
-            <img src={iconcss} alt="styledcomponents" />
-            <img src={iconfrm} alt="styledcomponents" />
-            <img src={iconhtm} alt="styledcomponents" />
-            <img src={iconjvs} alt="styledcomponents" />
-            <img src={iconrct} alt="styledcomponents" />
-            <img src={iconrdx} alt="styledcomponents" />
+      <a href={props.url} target="_blank" rel="noopener noreferrer">
+        <div className="image">
+          <img src={props.image} alt="styled" />
+          <div className="blur"></div>
+          <div className="content">
+            <h3>{props.name}</h3>
+            <p>{props.description}</p>
+            <div className="technologies">
+              <img src={iconstc} alt="styledcomponents" />
+              <img src={iconcss} alt="styledcomponents" />
+              <img src={iconfrm} alt="styledcomponents" />
+              <img src={iconhtm} alt="styledcomponents" />
+              <img src={iconjvs} alt="styledcomponents" />
+              <img src={iconrct} alt="styledcomponents" />
+              <img src={iconrdx} alt="styledcomponents" />
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     </StyledProject>
   );
 };

@@ -24,26 +24,35 @@ const ProjectsSection = () => {
     >
       <h2>Projects</h2>
       <Projects>
-        <Project name="mood." description="Music Web App" image={mood} />
+        <Project
+          name="mood."
+          description="Music Web App"
+          image={mood}
+          url="https://mood-music-app.onrender.com/"
+        />
         <Project
           name="NUMA"
           description="e-commerce landing page"
           image={numa}
+          url="https://numa.onrender.com/"
         />
         <Project
           name="Quotes"
           description="Random quote generator with public API and integrated with Twitter"
           image={quotes}
+          url="https://my-random-quote-generator.onrender.com/"
         />
         <Project
           name="Ignite"
           description="Gaming Web App working with public API"
           image={ignite}
+          url="https://ignite-games.onrender.com/"
         />
         <Project
           name="Focus"
           description="Web portfolio for Photography and Video"
           image={capture}
+          url="https://focus-films.onrender.com/"
         />
       </Projects>
     </ProjectList>
