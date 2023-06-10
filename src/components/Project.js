@@ -1,6 +1,13 @@
 //Styling and Animation
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import iconstc from "../img/technologies-icons/styled-icon.svg";
+import iconcss from "../img/technologies-icons/css-icon.svg";
+import iconfrm from "../img/technologies-icons/framer-icon.svg";
+import iconhtm from "../img/technologies-icons/html-icon.svg";
+import iconjvs from "../img/technologies-icons/javascript-icon.svg";
+import iconrct from "../img/technologies-icons/react-icon.svg";
+import iconrdx from "../img/technologies-icons/redux-icon.svg";
 
 const Project = (props) => {
   return (
@@ -11,6 +18,15 @@ const Project = (props) => {
         <div className="content">
           <h3>{props.name}</h3>
           <p>{props.description}</p>
+          <div className="technologies">
+            <img src={iconstc} alt="styledcomponents" />
+            <img src={iconcss} alt="styledcomponents" />
+            <img src={iconfrm} alt="styledcomponents" />
+            <img src={iconhtm} alt="styledcomponents" />
+            <img src={iconjvs} alt="styledcomponents" />
+            <img src={iconrct} alt="styledcomponents" />
+            <img src={iconrdx} alt="styledcomponents" />
+          </div>
         </div>
       </div>
     </StyledProject>
@@ -25,14 +41,11 @@ const StyledProject = styled(motion.div)`
   cursor: pointer;
   overflow: hidden;
   position: relative;
-  h3 {
-    padding: 1.5rem 0rem;
-  }
   img {
     width: 100%;
     height: 50vh;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
   }
 
   .content {
@@ -45,15 +58,26 @@ const StyledProject = styled(motion.div)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0;
     transition: all 0.8s ease;
     z-index: 1;
+    opacity: 0;
     &:hover {
       opacity: 1;
     }
     h3,
     p {
       color: black;
+    }
+    .technologies {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3rem;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+      margin-right: 1rem;
     }
   }
 

@@ -31,17 +31,17 @@ const ProjectsSection = () => {
           image={numa}
         />
         <Project
-          name="QUOTES"
-          description="Random quote generator working with public API and integrated with Twitter"
+          name="Quotes"
+          description="Random quote generator with public API and integrated with Twitter"
           image={quotes}
         />
         <Project
           name="Ignite"
-          description="Gaming App working with public API"
+          description="Gaming Web App working with public API"
           image={ignite}
         />
         <Project
-          name="Capture"
+          name="Focus"
           description="Web portfolio for Photography and Video"
           image={capture}
         />
