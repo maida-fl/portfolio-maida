@@ -20,13 +20,17 @@ const Project = (props) => {
             <h3>{props.name}</h3>
             <p>{props.description}</p>
             <div className="technologies">
-              <img src={iconstc} alt="styledcomponents" />
-              <img src={iconcss} alt="styledcomponents" />
-              <img src={iconfrm} alt="styledcomponents" />
-              <img src={iconhtm} alt="styledcomponents" />
-              <img src={iconjvs} alt="styledcomponents" />
-              <img src={iconrct} alt="styledcomponents" />
-              <img src={iconrdx} alt="styledcomponents" />
+              <img
+                src={iconstc}
+                alt="styledcomponents"
+                title="Styled Components"
+              />
+              <img src={iconcss} alt="css" title="CSS3" />
+              <img src={iconfrm} alt="framermotion" title="Framer Motion" />
+              <img src={iconhtm} alt="html" title="HTML5" />
+              <img src={iconjvs} alt="javascript" title="Javascript" />
+              <img src={iconrct} alt="reactjs" title="ReactJS" />
+              <img src={iconrdx} alt="redux" title="Redux" />
             </div>
           </div>
         </div>

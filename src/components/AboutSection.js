@@ -8,7 +8,7 @@ import { titleAnim, fade } from "../animation";
 
 const AboutSection = () => {
   return (
-    <About>
+    <About id="home">
       <Description>
         <motion.div>
           <Hide>

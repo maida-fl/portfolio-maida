@@ -24,10 +24,14 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-          {/* <a href="#">contact</a> */}
-          <Link to="contact" smooth={true} duration={500} className="nav-link">
+          <a
+            href="mailto:maida.guzman@outlook.com"
+            className="nav-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             contact
-          </Link>
+          </a>
         </li>
       </ul>
     </StyledNav>
