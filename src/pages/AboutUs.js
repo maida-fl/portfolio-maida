@@ -5,6 +5,7 @@ import Nav from "../components/Nav";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 import ProjectsSection from "../components/ProjectsSection";
+import ContactSection from "../components/ContactSection";
 
 const AboutUs = () => {
   return (
@@ -18,6 +19,7 @@ const AboutUs = () => {
       >
         <AboutSection />
         <ProjectsSection />
+        <ContactSection />
       </motion.div>
     </>
   );

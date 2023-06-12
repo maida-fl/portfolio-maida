@@ -5,33 +5,25 @@ import { Link } from "react-scroll";
 const Nav = () => {
   return (
     <StyledNav>
-      {/* <a href="#">Logo</a> */}
       <Link to="home" smooth={true} duration={500} className="maida-logo">
         {/* <img src={logo} alt="logo" /> */}
         MG
       </Link>
       <ul>
         <li>
-          {/* <a href="#">about me</a> */}
           <Link to="skills" smooth={true} duration={500} className="nav-link">
             about me
           </Link>
         </li>
         <li>
-          {/* <a href="#">work</a> */}
           <Link to="work" smooth={true} duration={500} className="nav-link">
             work
           </Link>
         </li>
         <li>
-          <a
-            href="mailto:maida.guzman@outlook.com"
-            className="nav-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link to="contact" smooth={true} duration={500} className="nav-link">
             contact
-          </a>
+          </Link>
         </li>
       </ul>
     </StyledNav>

@@ -11,7 +11,10 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'DM Sans', sans-serif;
         /* background-image: url("background.png"); */
     }
-    button {
+    button a {
+        color: #5DA399; 
+    }
+    button{
         font-weight: bold;
         font-size: 1.1rem;
         letter-spacing: 0.02rem;
@@ -26,7 +29,10 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'DM Sans', sans-serif;
         &:hover{
             background-color: #5DA399;
-            color: #FDFDFD;
+            color: #FDFDFD;            
+        }
+        &:hover a {
+            color: #FDFDFD; 
         }
     }
     h1 {
