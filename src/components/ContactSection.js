@@ -80,7 +80,7 @@ const Contact = styled(motion.div)`
     left: 0;
     width: 100%;
     height: 100%;
-    transform: skew(0, 10deg) rotate(10deg) translateY(250px);
+    transform: skew(0, 10deg) rotate(0) translateY(250px);
     transition: transform 400ms;
     z-index: -10;
   }
