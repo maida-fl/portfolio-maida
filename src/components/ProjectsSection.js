@@ -64,6 +64,19 @@ const ProjectList = styled(motion.div)`
     padding: 5rem 0rem;
   }
   padding: 5rem 10rem;
+
+  @media (max-width: 850px) {
+    h2 {
+      padding: 5rem 0rem;
+    }
+    padding: 5rem 5rem;
+  }
+  @media (max-width: 600px) {
+    h2 {
+      padding: 5rem 0rem;
+    }
+    padding: 5rem 3rem;
+  }
 `;
 const Projects = styled(motion.div)`
   min-height: 80vh;
@@ -71,6 +84,10 @@ const Projects = styled(motion.div)`
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-column-gap: 3rem;
   grid-row-gap: 5rem;
+  @media (max-width: 850px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export default ProjectsSection;

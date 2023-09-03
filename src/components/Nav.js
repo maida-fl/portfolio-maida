@@ -91,5 +91,21 @@ const StyledNav = styled.nav`
     bottom: 0;
     height: 100%;
   }
+  @media (max-width: 1025px) {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    .maida-logo {
+      display: none;
+      /* margin: 1rem; */
+    }
+    ul {
+      padding: 2rem;
+      justify-content: space-around;
+      width: 100%;
+      li {
+        padding: 0;
+      }
+    }
+  }
 `;
 export default Nav;

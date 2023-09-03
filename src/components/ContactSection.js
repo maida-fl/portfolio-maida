@@ -32,9 +32,9 @@ const ContactSection = () => {
                 ></path>
               </svg>
             </div>
-            <span className="mail" data-status="Click to Copy!">
+            <div className="mail" data-status="Click to Copy!">
               maida.guzman@outlook.com
-            </span>
+            </div>
           </div>
         </a>
         <a
@@ -55,9 +55,9 @@ const ContactSection = () => {
                 <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
               </svg>
             </div>
-            <span className="mail" data-status="Click to Copy!">
+            <div className="mail" data-status="Click to Copy!">
               linkedin
-            </span>
+            </div>
           </div>
         </a>
       </div>
@@ -71,6 +71,18 @@ const Contact = styled(motion.div)`
   flex-direction: column;
   justify-content: space-between;
   padding: 4rem 10rem;
+  @media (max-width: 850px) {
+    h2 {
+      padding: 5rem 0rem;
+    }
+    padding: 5rem 5rem;
+  }
+  @media (max-width: 600px) {
+    h2 {
+      padding: 5rem 0rem;
+    }
+    padding: 5rem 3rem;
+  }
   .contact {
     transform-origin: top left;
     animation: anim-text 1150ms cubic-bezier(0, 0.45, 0.15, 1);
@@ -120,20 +132,33 @@ const Contact = styled(motion.div)`
   .contact .icon {
     height: 100%;
     padding: 0 40px;
-    margin-right: 40px;
+    /* margin-right: 40px; */
     display: flex;
     box-sizing: border-box;
     /* border-right: 1px solid rgba(243, 242, 244, 0.3); */
     border-right: 1px solid #5da399;
     justify-content: center;
     align-items: center;
+    @media (max-width: 400px) {
+      width: 100%;
+      border-right: none;
+    }
   }
   .contact .icon svg {
     max-width: 16px;
+    @media (max-width: 400px) {
+      max-width: 24px;
+    }
   }
   .contact .mail {
     color: #12141d;
     opacity: 0.8;
+    font-weight: bold;
+    width: 100%;
+    padding-left: 1rem;
+    @media (max-width: 400px) {
+      display: none;
+    }
   }
   .contact:hover .mail {
     /* color: rgba(255, 255, 255, 0.4); */

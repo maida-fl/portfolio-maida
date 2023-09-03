@@ -12,6 +12,9 @@ export const About = styled.div`
     margin: auto;
   } */
   /* background-image: url("background.png"); */
+  @media (max-width: 1025px) {
+    padding: 2rem 2rem;
+  }
 `;
 export const Description = styled.div`
   flex: 1;
@@ -21,6 +24,12 @@ export const Description = styled.div`
     font-weight: lighter;
   }
   text-align: center;
+  @media (max-width: 1025px) {
+    padding: 0;
+    button {
+      margin: 2rem 0rem 5rem 0rem;
+    }
+  }
 `;
 export const Image = styled.div`
   /* flex: 1; */
