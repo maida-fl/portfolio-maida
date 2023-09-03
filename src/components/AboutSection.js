@@ -22,7 +22,12 @@ const AboutSection = () => {
           </Hide>
         </motion.div>
         <motion.button variants={fade}>
-          <Link to="contact" smooth={true} duration={500} className="nav-link">
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="nav-link main-button"
+          >
             contact
           </Link>
         </motion.button>

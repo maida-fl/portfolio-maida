@@ -30,6 +30,21 @@ export const Description = styled.div`
       margin: 2rem 0rem 5rem 0rem;
     }
   }
+  h1 {
+    @media (min-width: 1300px) {
+      font-size: 5rem;
+    }
+  }
+  .subtitle {
+    @media (min-width: 1300px) {
+      font-size: 3.7rem;
+    }
+  }
+  .main-button {
+    @media (min-width: 1300px) {
+      font-size: 1.2rem;
+    }
+  }
 `;
 export const Image = styled.div`
   /* flex: 1; */

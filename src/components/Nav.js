@@ -40,6 +40,9 @@ const StyledNav = styled.nav`
   a {
     text-decoration: none;
     color: #12141d;
+    @media (min-width: 1300px) {
+      font-size: 1.2rem;
+    }
   }
   ul {
     display: flex;

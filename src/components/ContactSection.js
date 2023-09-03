@@ -69,7 +69,7 @@ const Contact = styled(motion.div)`
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 4rem 10rem;
   @media (max-width: 850px) {
     h2 {
