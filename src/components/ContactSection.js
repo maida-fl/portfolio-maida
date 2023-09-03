@@ -15,36 +15,62 @@ const ContactSection = () => {
       id="contact"
     >
       <h2>Let's talk</h2>
-      <a
-        href="mailto:maida.guzman@outlook.com"
-        className="nav-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className="contact">
-          <div className="icon">
-            <svg width="16" height="11" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M.254 10.188H15.12V.438H.254v9.75zm2.403-8.635h10.075L7.72 4.923l-5.062-3.37zm-1.287.484l6.352 4.228 6.283-4.222v7.03H1.37V2.037z"
-                fill="#12141d;"
-                fill-rule="evenodd"
-              ></path>
-            </svg>
+      <div className="container-contact-links">
+        <a
+          href="mailto:maida.guzman@outlook.com"
+          className="nav-link contact-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="contact">
+            <div className="icon">
+              <svg width="16" height="11" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M.254 10.188H15.12V.438H.254v9.75zm2.403-8.635h10.075L7.72 4.923l-5.062-3.37zm-1.287.484l6.352 4.228 6.283-4.222v7.03H1.37V2.037z"
+                  fill="#12141d"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <span className="mail" data-status="Click to Copy!">
+              maida.guzman@outlook.com
+            </span>
           </div>
-          <span className="mail" data-status="Click to Copy!">
-            maida.guzman@outlook.com
-          </span>
-        </div>
-      </a>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/maida-guzman"
+          className="nav-link contact-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="contact">
+            <div className="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="4.983" cy="5.009" r="2.188"></circle>
+                <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
+              </svg>
+            </div>
+            <span className="mail" data-status="Click to Copy!">
+              linkedin
+            </span>
+          </div>
+        </a>
+      </div>
     </Contact>
   );
 };
 
 const Contact = styled(motion.div)`
-  h2 {
-    padding: 5rem 0rem;
-  }
-  padding: 5rem 10rem;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem 10rem;
   .contact {
     transform-origin: top left;
     animation: anim-text 1150ms cubic-bezier(0, 0.45, 0.15, 1);
@@ -102,6 +128,9 @@ const Contact = styled(motion.div)`
     justify-content: center;
     align-items: center;
   }
+  .contact .icon svg {
+    max-width: 16px;
+  }
   .contact .mail {
     color: #12141d;
     opacity: 0.8;
@@ -114,6 +143,9 @@ const Contact = styled(motion.div)`
 
   .contact:hover .mail:before {
     opacity: 1;
+  }
+  .contact-link .contact {
+    margin-bottom: 1rem;
   }
 `;
 
