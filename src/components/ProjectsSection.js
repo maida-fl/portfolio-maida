@@ -41,7 +41,7 @@ const ProjectsSection = () => {
           name="Portfolio"
           description="Personal portfolio website"
           image={portfolio}
-          url="https://maidaguzman.vercelapp.com/"
+          url="https://maidaguzman.vercel.app/"
         />
 
         {/* <Project
