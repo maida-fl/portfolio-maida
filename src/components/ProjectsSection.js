@@ -11,6 +11,7 @@ import capture from "../img/capture.png";
 import mood from "../img/mood2.png";
 import ignite from "../img/ignite.png";
 import numa from "../img/numa.png";
+import portfolio from "../img/portfolio.png";
 
 const ProjectsSection = () => {
   const [element, controls] = useScroll();
@@ -37,23 +38,30 @@ const ProjectsSection = () => {
           url="https://numa.onrender.com/"
         />
         <Project
-          name="Quotes"
-          description="Random quote generator with public API and integrated with Twitter"
-          image={quotes}
-          url="https://my-random-quote-generator.onrender.com/"
+          name="Portfolio"
+          description="Personal portfolio website"
+          image={portfolio}
+          url="https://maidaguzman.vercelapp.com/"
         />
-        <Project
-          name="Ignite"
-          description="Gaming Web App working with public API"
-          image={ignite}
-          url="https://ignite-games.onrender.com/"
-        />
-        <Project
-          name="Focus"
-          description="Web portfolio for Photography and Video"
-          image={capture}
-          url="https://focus-films.onrender.com/"
-        />
+
+        {/* <Project
+            name="Quotes"
+            description="Random quote generator with public API and integrated with Twitter"
+            image={quotes}
+            url="https://my-random-quote-generator.onrender.com/"
+          />
+          <Project
+            name="Ignite"
+            description="Gaming Web App working with public API"
+            image={ignite}
+            url="https://ignite-games.onrender.com/"
+          />
+          <Project
+            name="Focus"
+            description="Web portfolio for Photography and Video"
+            image={capture}
+            url="https://focus-films.onrender.com/"
+          /> */}
       </Projects>
     </ProjectList>
   );

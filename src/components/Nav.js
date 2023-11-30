@@ -11,7 +11,7 @@ const Nav = () => {
       </Link>
       <ul>
         <li>
-          <Link to="skills" smooth={true} duration={500} className="nav-link">
+          <Link to="home" smooth={true} duration={500} className="nav-link">
             about me
           </Link>
         </li>
